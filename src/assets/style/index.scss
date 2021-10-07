@@ -36,10 +36,10 @@ header {
     background: $gradient;
     justify-content: center;
     height: 113px;
-    
+
     .logo {
         color: #fff;
-        font-size: 20px;
+        font-size: 32px;
         font-weight: bold;
         margin: auto 0;
 
@@ -50,13 +50,13 @@ header {
 }
 
 .btn {
-    border: solid 2px $grey;
-    border-radius: 3px;
+    border: solid 1px $grey;
+    border-radius: 5px;
     display: block;
     padding: $space $space-sm * 2;
     text-align: center;
     color: $grey;
-    font-size: 15px;
+    font-size: 18px;
     cursor: pointer;
     @include easing();
 
