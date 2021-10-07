@@ -9,7 +9,7 @@ const Card = ({ id, avatar, email, first_name, last_name, back }) => {
       </div>
     </div>
     <div className="column-main">
-      <h3>{first_name} {last_name}</h3>
+      <h2>{first_name} {last_name}</h2>
       <span>{email}</span>
     </div>
     {!back ? <Link to={`/detail/${id}`} className="btn review-button">Review</Link>
