@@ -33,14 +33,15 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: $space-sm 0px;
-    background-color: $blue;
+    background: $gradient;
     justify-content: center;
-
+    height: 113px;
+    
     .logo {
         color: #fff;
         font-size: 20px;
         font-weight: bold;
+        margin: auto 0;
 
         a {
             color: #fff;
