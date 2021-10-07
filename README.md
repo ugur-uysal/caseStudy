@@ -1,1 +1,1 @@
-# caseWork
+# caseStudy
