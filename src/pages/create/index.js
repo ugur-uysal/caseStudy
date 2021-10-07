@@ -57,7 +57,7 @@ const Detail = ({ match }) => {
             <button className="btn primary" onClick={onSave}>Create</button>
           </div>
           <div className="col">
-            <Link to="/" className="btn primary">Back</Link>
+            <Link to="/" className="btn primary b-shadow-none">Back</Link>
           </div>
         </div>
       </div>
