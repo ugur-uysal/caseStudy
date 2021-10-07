@@ -1,0 +1,6 @@
+@mixin easing($key: 0.3, $type: all, $animation: ease) {
+    transition: $type $key + s $animation;
+    -moz-transition: $type $key + s $animation;
+    -webkit-transition: $type $key + s $animation;
+    -ms-transition: $type $key + s $animation;
+}

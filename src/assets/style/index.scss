@@ -1,0 +1,136 @@
+@import "./reset";
+@import "./variable";
+@import "./responsive";
+@import "./mixin";
+@import "./list";
+@import "./components";
+
+body {
+    background-color: $background;
+}
+
+.container {
+    width: 100%;
+}
+
+.content {
+    width: $media-large;
+    margin: 0 auto;
+
+    @include responsive(md) {
+        width: $media-medium;
+    }
+
+    @include responsive(sm) {
+        width: $media-small;
+    }
+
+    @include responsive(xs) {
+        width: 90%;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: $space-sm 0px;
+    background-color: $blue;
+    justify-content: center;
+
+    .logo {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.btn {
+    border: solid 2px $grey;
+    border-radius: 3px;
+    display: block;
+    padding: $space $space-sm * 2;
+    text-align: center;
+    color: $grey;
+    font-size: 15px;
+    cursor: pointer;
+    @include easing();
+
+    &:hover,
+    &.active,
+    &.primary {
+        background-color: $blue !important;
+        border-color: $blue;
+        color: #fff;
+    }
+}
+
+input {
+    padding: $space;
+    width: 250px;
+    border: solid 1px $grey;
+    border-radius: 3px;
+}
+
+.column {
+    background-color: $background;
+    border: solid 1px $lightBorder;
+    box-shadow: 0 2px 3px $boxShadowColor;
+}
+
+.pages {
+    .page-title {
+        color: $black-color;
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .page-content {
+        min-height: 300px;
+        margin-top: 40px;
+
+        .empty-data {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 100px;
+
+            .circle {
+                width: 100px;
+                height: 100px;
+                background-color: $blue;
+                border: solid 2px darken($blue, 10%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                border-radius: 50%;
+
+                svg {
+                    width: 50px;
+                    height: auto;
+                }
+            }
+
+            .text {
+                font-size: 14px;
+                color: $blue;
+                margin-top: 20px;
+
+                p {
+                    font-weight: 600;
+                }
+
+                button {
+                    width: auto;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
