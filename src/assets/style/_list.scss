@@ -26,8 +26,9 @@
     width: calc(33.33% - 30px);
     flex-basis: calc(33.33% - 30px);
     margin: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: $space * 4;
+    box-shadow: 0px 10px 25px #00000008;
 
     @include responsive(md) {
       width: calc(33.33% - 30px);
@@ -49,10 +50,10 @@
       justify-content: center;
 
       .image-box {
-        width: 130px;
-        height: 130px;
+        width: 115px;
+        height: 115px;
         background-color: #fff;
-        border: solid 2px $background;
+        box-shadow: 0px 10px 20px #00000029;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -68,9 +69,9 @@
     .column-main {
       text-align: center;
       margin-top: $space-sm;
-      h2 {
+      h3 {
         text-align: center;
-        font-size: 18px;
+        font-size: 22px;
         color: $black-color;
         text-transform: capitalize;
         font-weight: 600;
